@@ -73,12 +73,12 @@ table {
 /*General*/
 
 body{
-	background-image: url("img/pattern.png");
-	background-color: black;
+	background-image: url("img/graphy.png");
+	background-color: none;
 }
 
 h1{
-	color: white;
+	color: #424242;
 	font-family: 'robotolight', Arial, Sans-serif;
 	font-size: 30px;
 	line-height: 30px;
@@ -89,7 +89,7 @@ h1{
 }
 
 p{
-	color: white;
+	color: #424242;
 	font-family: 'robotoregular', Arial, Sans-serif;
 	line-height:100%;
 	margin:0;
@@ -98,7 +98,7 @@ p{
 }
 
 a{
-	color: white;
+	color: 	#b22222;
 	font-family: 'robotoregular', Arial, Sans-serif;
 	line-height:100%;
 	margin:0;
