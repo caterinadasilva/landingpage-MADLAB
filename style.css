@@ -70,6 +70,8 @@ table {
     font-style: normal;
 }
 
+/*-----------------IMAC-------------------*/
+
 /*General*/
 
 body{
@@ -82,7 +84,7 @@ h1{
 	font-family: 'robotolight', Arial, Sans-serif;
 	font-size: 30px;
 	line-height: 30px;
-	letter-spacing: 3px;
+	letter-spacing: 9px;
 	font-weight: normal;
 	text-align: center;
 	margin: 5% 5% 0;
@@ -98,13 +100,17 @@ p{
 }
 
 a{
-	color: #b22222;
+	color: #b32222;
 	font-family: 'robotoregular', Arial, Sans-serif;
 	line-height:100%;
-	margin:0;
     font-size: 13px;
     line-height: 22px;
 }
+
+a:link    {color: white;}
+a:visited {color: white;}
+a:hover   {color: white;}
+a:active  {color: white;}
 
 /*Header*/
 
@@ -118,14 +124,14 @@ header img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 240px;
-	width: 640px;
+	margin-top: 11%;
+	width: 630px;
 }
 
 /*Contenedor*/
 
-.contenedor{
-	width: 600px;
+.navegacion{
+	width: 630px;
     margin: auto;
 }
 
@@ -134,38 +140,188 @@ nav ul{
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	margin: auto;
+	margin: 50px auto;
+	width: 635px;
 	}
 	
 nav li {
 	float:left;
+	width:317px;
 	}
 	
 nav a:link,a:visited{
 	display:block;
-	width:150px;
-	color:#FFFFFF;
+	color: white;
 	background-color:#424242;
+	opacity: 0.4;
 	text-align:center;
 	padding:4px;
 	text-decoration:none;
 	}
-	
+
 nav a:hover,a:active{
 	background-color:#b22222;
+	opacity: 1;
 	}
 
 
 /*Footer*/
 
 footer{
-	width: 500px;
-	position: relative;
+	width: 350px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 80px auto 40px;
+
+}
+
+footer p{
+	margin-bottom: 10px;
+	text-align: center;
 }
 
 img.pie{
-	width: inherit;
+	width: 350px;
+	margin-bottom: 80px;
+}
+
+a.pie,a:link.pie,a:visited.pie{
+	display: block;
+	text-align: center;
+	color: #b22222;
+}
+
+																			/*---------- NOTEBOOK --------------*/
+
+@media screen and (min-width: 1000px) and (max-width: 1450px){
+	
+	/*Tipografía*/
+	
+	h1{
+		font-size: 25px;
+		line-height: 30px;
+		letter-spacing: 7px;
+	}
+	
+	/*Header*/
+	
+	header img{
+		margin-top: 15%;
+	}
+
+	/*Footer*/
+		
+	img.pie{
+		margin-bottom: 40px;
+	}
+	
+}
+	
+																		/* ----------------- TABLET -----------*/
+
+
+@media screen and (min-width: 765px) and (max-width: 1000px){
+
+		/*Tipografía*/
+	
+	h1{
+		font-size: 25px;
+		letter-spacing: 7px;
+	}
+
+	/*Contenedor*/
+	
+	header img{
+		margin-top: 35%;
+		margin-bottom: 80px;
+		width: 500px;
+	}
+	
+	nav ul{
+		margin: 80px auto;
+		width: 500px;
+		}
+		
+	nav li {
+		width:250px;
+		}
+		
+	/*Footer*/
+	
+	footer{
+		width: 300px;
+	}
+	
+	footer p{
+		font-size: 11px;
+	}
+	
+	img.pie{
+		width: 300px;
+		margin-bottom: 80px;
+	}
+	
+	footer a{
+		font-size: 11px;
+	}
+}
+
+																				/*----------------- MÓVIL -----------------*/
+@media screen and (min-width: 320px) and (max-width: 764px){
+
+	/*Tipografía*/
+	
+	h1{
+		font-size: 20px;
+		letter-spacing: 4px;
+	}
+	
+	header img{
+		margin-top: 45%;
+		margin-bottom: 5%;
+		width: 280px;
+	}
+	
+	p{
+	    font-size: 12px;
+	}
+	
+	a{
+	    font-size: 14px;
+	}
+	
+	/*Contenedor*/
+	
+	.navegacion{
+		width: 280px;
+	}
+	
+	nav ul{
+		margin: 50px auto;
+		width: 280px;
+		}
+		
+	nav li {
+		width: 280px;
+		margin: 10px;
+		}
+		
+	nav a:link,a:visited{
+		padding:10px;
+		}	
+	
+	/*Footer*/
+	
+	footer{
+		width: 280px;
+	}
+	
+	footer p{
+		margin-right: 40px;
+		font-size: 12px;
+		text-align: left;
+	}
+	
+	img.pie{
+		width: 280px;
+	}
 }
